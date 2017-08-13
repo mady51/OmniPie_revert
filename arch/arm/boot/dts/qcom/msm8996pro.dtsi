@@ -1354,6 +1354,13 @@
 			qcom,mitigation-freq-khz = <1056000>;
 		};
 	};
+
+	qcom,bcl {
+		qcom,ibat-monitor {
+			/* Adjust VDD restriction phandle for BCL. */
+			qcom,mitigation-freq-khz = <1056000>;
+		};
+	};
 };
 
 /* GPU overrides */
