@@ -359,6 +359,7 @@ static struct ctl_table kern_table[] = {
 		.mode		= 0644,
 		.proc_handler   = sched_hmp_proc_update_handler,
 	},
+#if 0
 	{
 		.procname	= "sched_restrict_tasks_spread",
 		.data		= &sysctl_sched_restrict_tasks_spread,
@@ -368,6 +369,7 @@ static struct ctl_table kern_table[] = {
 		.extra1		= &zero,
 		.extra2		= &one,
 	},
+#endif
 	{
 		.procname       = "sched_account_wait_time",
 		.data           = &sysctl_sched_account_wait_time,
